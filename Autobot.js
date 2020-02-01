@@ -1,21 +1,4 @@
-var Autobot = {
-    title: 'Autobot',
-    version: '0.44',
-    domain: window.location.protocol + "//cdn.jsdelivr.net/gh/alexandre2311/bot@bot1/",
-    botWnd: '',
-    isLogged: false,
-    Account: {
-        player_id: Game.player_id,
-        player_name: Game.player_name,
-        world_id: Game.world_id,
-        locale_lang: Game.locale_lang,
-        premium_grepolis: Game.premium_user,
-        csrfToken: Game.csrfToken
-    },
-    init: function () {
-        ConsoleLog.Log('Initialize Autobot', 0);
-        Autobot.loadModules();
-        Autobot.initAjax();
+
         Autobot.initMapTownFeature();
         Autobot.fixMessage();
         Assistant.init()
